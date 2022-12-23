@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+  <app-ind></app-ind>
+  <!-- <section class="contact"> -->
+  <div class="content">
+    <h2>.</h2>
+  </div>
+  <div class="container">
+    <div class="contactFrom">
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+        <h4>Edit food </h4>
+
+
+
+
+        <div style="color: red;">
+          <h6>Foodaname = {{onefood.foodname}}</h6>
+
+          <h6>Foodprice = {{onefood.foodprice}}</h6>
+          <h6>If any change then write in below form</h6>
+        </div>
+        <div class="inputBox">
+          <input type="text" name="foodname" ngModel  #foodname="ngModel">
+          <span>Food name</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="number" name="foodprice" min="1" ngModel  #foodprice="ngModel">
+          <span>Food price</span>
+        </div>
+        <div class="inputBox">
+          <input type="file" name="foodpic" title="choose food image" (change)="selectImage($event)" ngModel
+            #foodpic="ngModel">
+          <!-- <span>Choose pizza pic</span> -->
+        </div>
+        <div class="inputBox">
+          <input type="submit" [disabled]="f.invalid" value="submit">
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- </section> -->
+</body>
+
+</html>
