@@ -11,6 +11,11 @@
     "noFallthroughCasesInSwitch": false,
     "noImplicitReturns": false,
     "noImplicitAny": false,
+    "paths": {
+      "my-logger": [
+        "dist/my-logger"
+      ]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
