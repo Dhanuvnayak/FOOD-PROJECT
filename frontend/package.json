@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "ng": "ng",
-    "start":"ng serve",
+    "start": "ng serve",
     "watch": "ng build --watch --configuration development",
     "test": "ng test ",
-    "build":"ng build"
-
+    "build": "ng build"
   },
   "repository": {
     "type": "git",
@@ -37,6 +36,7 @@
     "karma-coverage-istanbul-reporter": "^3.0.3",
     "karma-jasmine": "^5.1.0",
     "karma-jasmine-html-reporter": "^2.0.0",
+    "ng": "^0.0.0",
     "ngx-toastr": "^16.0.1",
     "noty": "^3.2.0-beta-deprecated",
     "socket.io-client": "^4.5.4",
