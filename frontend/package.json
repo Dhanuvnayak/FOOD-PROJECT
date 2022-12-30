@@ -8,7 +8,7 @@
     "start": "ng serve",
     "watch": "ng build --watch --configuration development",
     "test": "ng test ",
-    "build": "ng build"
+    "build": "npm install --force && ng build --configuration production"
   },
   "repository": {
     "type": "git",
