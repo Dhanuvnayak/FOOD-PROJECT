@@ -7,9 +7,10 @@
     "ng": "ng",
     "ng-high-memory": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng build --configuration production",
     "start": "ng serve",
+    "build": "npm install --force && ng build --configuration production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test ",
-    "build": "npm install --force && ng build --configuration production"
+    "test": "ng test "
+
   },
   "repository": {
     "type": "git",
