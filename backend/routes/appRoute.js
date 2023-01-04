@@ -421,7 +421,7 @@ function deletefromcart(req, res, oldcart, newfood, userid) {
    
     for (var i = 0; i < oldfoodsonarr.length; i++) {
         if (oldfoodsonarr[i]._id != newfood._id) {
-            temp.push(oldfoodjsonarr[i])
+            temp.push(oldfoodsonarr[i])
         }
         else {
             oldcart.total -= newfood.foodprice * newfood.qty;
