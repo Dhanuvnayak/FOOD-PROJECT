@@ -11,7 +11,7 @@ var adminRoutes = require('./routes/adminRoute')
 
 
 // process.env.PORT hoy to e else 3000
-const PORT = process.env.PORT || 10000
+const PORT = process.env.PORT || 3000
 
 // some useful library
 app.use(bodyParser.urlencoded({ extended: true }))
