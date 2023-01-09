@@ -10,7 +10,6 @@
     "build": "npm install --force && ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test "
-
   },
   "repository": {
     "type": "git",
@@ -40,6 +39,7 @@
     "karma-jasmine": "^5.1.0",
     "karma-jasmine-html-reporter": "^2.0.0",
     "ng": "^0.0.0",
+    "ng-noty": "^1.0.1",
     "ngx-toastr": "^16.0.1",
     "noty": "^3.2.0-beta-deprecated",
     "socket.io-client": "^4.5.4",

@@ -84,6 +84,6 @@ export class ViewfoodComponent implements OnInit {
   }
   editfood(food) {
     this.adminService.temp = food;
-    this.router.navigate(['/admin/food']);
+    this.router.navigate(['/admin/editfood']);
   }
 }
