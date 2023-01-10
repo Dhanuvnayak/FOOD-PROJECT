@@ -78,7 +78,7 @@ export class EditfoodComponent implements OnInit {
       formData.append('file', this.image);
 
       // *************
-      this.http.post<any>('http://localhost:3000/admin/editfoodwithimage', formData).subscribe(
+      this.http.post<any>('https://food-project.onrender.com/admin/editfoodwithimage', formData).subscribe(
         (res) => {
           this.adminService.avail = true;
           this.adminService.msg = "Successfully Edited a food!!!"
@@ -101,7 +101,7 @@ export class EditfoodComponent implements OnInit {
     }
     else {
 
-      this.http.get<any>('http://localhost:3000/admin/editfoodwithoutimage?id=' + this.id + '&foodname=' + this.pn + '&foodprice=' + this.pp
+      this.http.get<any>('https://food-project.onrender.com/admin/editfoodwithoutimage?id=' + this.id + '&foodname=' + this.pn + '&foodprice=' + this.pp
       ).subscribe(
         (res) => {
           this.adminService.avail = true;

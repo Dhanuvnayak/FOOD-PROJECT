@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 export class AuthService {
   public avail:boolean = false;
   public msg:string="";
-  private baseUri: string = "http://localhost:3000";
+  private baseUri: string = "https://food-project.onrender.com";
   private headers = new HttpHeaders().set('Content-Type', 'application/json');
   constructor(private http: HttpClient, private router: Router) { }
 
@@ -16,7 +16,7 @@ export class AuthService {
   }
 
   register(body: any) {
-    return this.http.post('http://127.0.0.1:3000/register', body, {
+    return this.http.post('https://food-project.onrender.com/register', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
@@ -28,7 +28,7 @@ export class AuthService {
   }
 
   reset(body: any) {
-    return this.http.post('http://127.0.0.1:3000/reset', body, {
+    return this.http.post('https://food-project.onrender.com/reset', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
@@ -36,7 +36,7 @@ export class AuthService {
 
   resetpassworddone(body: any) {
 
-    return this.http.put('http://127.0.0.1:3000/forgot-password-done', body, {
+    return this.http.put('https://food-project.onrender.com/forgot-password-done', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
@@ -47,7 +47,7 @@ export class AuthService {
   }
 
   login(body: any) {
-    return this.http.post('http://127.0.0.1:3000/login', body, {
+    return this.http.post('https://food-project.onrender.com/login', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
@@ -83,7 +83,7 @@ export class AuthService {
   }
 
   changepassword(body: any) {
-    return this.http.post('http://127.0.0.1:3000/changepassword', body, {
+    return this.http.post('https://food-project.onrender.com/changepassword', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
@@ -91,7 +91,7 @@ export class AuthService {
 
 
   sendfeedback(body: any) {
-    return this.http.post('http://127.0.0.1:3000/sendfeedback', body, {
+    return this.http.post('https://food-project.onrender.com/sendfeedback', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });

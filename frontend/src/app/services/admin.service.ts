@@ -8,7 +8,7 @@ export class AdminService {
   public avail:boolean = false;
   public msg:string="";
   public temporder:any;
-  private baseUri: string = "http://localhost:3000/admin";
+  private baseUri: string = "https://food-project.onrender.com/admin";
   private headers = new HttpHeaders().set('Content-Type', 'application/json');
   constructor(private http: HttpClient) { }
 
