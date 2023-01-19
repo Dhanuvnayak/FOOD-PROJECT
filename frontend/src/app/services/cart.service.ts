@@ -17,7 +17,7 @@ export class CartService {
 
   addFood(body:any) {
 
-    return this.http.post('https://food-project.onrender.com', body, {
+    return this.http.post('https://food-project.onrender.com/addtocart', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
@@ -25,7 +25,7 @@ export class CartService {
 
 
   deleteFood(body:any) {
-    return this.http.post('https://food-project.onrender.com', body, {
+    return this.http.post('https://food-project.onrender.com/deletefromcart', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
