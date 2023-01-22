@@ -289,3 +289,13 @@ padding-bottom: 2%;
   background-color: red;
   color: white;
 }
+
+.center {
+  text-align: center;
+}
+
+.toast-success {
+  padding-left: 80px;
+  text-align: center;
+  background-position: 35% !important;
+}
