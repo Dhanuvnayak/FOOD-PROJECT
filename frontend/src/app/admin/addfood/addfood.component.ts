@@ -51,7 +51,7 @@ export class AddfoodComponent implements OnInit {
     formData.append('file', this.image);
     formData.append('foodname', f.controls.foodname.value);
     formData.append('foodprice', f.controls.foodprice.value);
-    this.http.post<any>('https://food-project.onrender.com//admin//addfood', formData).subscribe(
+    this.http.post<any>('https://food-project.onrender.com...', formData).subscribe(
       (res) => {
         this.adminService.avail = true;
         this.adminService.msg = "Successfully Added a food!!!"
