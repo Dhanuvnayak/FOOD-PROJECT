@@ -91,7 +91,7 @@ function getTime() {
 }
 var storage = multer.diskStorage({
 
-    destination: (req, file, callBack) => {
+    destination: (_req, file, callBack) => {
         callBack(null, 'https://front-end-r0gn.onrender.com/src/assets/food')
     },
     filename: (req, file, callBack) => {
@@ -191,6 +191,7 @@ function verifyToken(req, res, next) {
     if (token == 'null') {
         return res.status(401).send("unauthorized req")
     }
+
     let payload = jwt.verify(token, 'secretkey')
     if (!payload) {
         return res.status(401).send("unauthorized req")
